@@ -1,0 +1,13 @@
+test/
+hey.txt
+morse.txt
+
+**/bin/
+**/obj/
+**/**/bin/
+**/**/obj/
+
+**/**/**/bin/
+**/**/**/obj/
+*.csproj
+
