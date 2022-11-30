@@ -229,9 +229,6 @@ namespace SkeletonProgramCS
 0, 0, 22, 13, 0, 0, 10, 0, 0, 0 };
             int[] Dot = new int[] { 5, 18, 0, 0, 2, 9, 0, 26, 0, 19, 0, 3, 0, 7, 4, 0, 0, 0,
 12, 8, 14, 6, 0, 16, 0, 0, 0 };
-
-
-
             char[] Letter = new char[] { ' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
             string[] MorseCode = new string[] { " ", ".-", "-...", "-.-.", "-..", ".", "..-.",

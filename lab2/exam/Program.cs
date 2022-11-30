@@ -6,8 +6,6 @@ namespace exam
         static void Main(string[] args)
         {
             float examResult;
-
-
             Console.WriteLine("Please enter your exam result(in %): ");
             try
             {
@@ -45,8 +43,6 @@ namespace exam
             {
                 Console.WriteLine(ex.Message);
             }
-
-
         }
     }
 }

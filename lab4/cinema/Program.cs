@@ -3,8 +3,6 @@ namespace Cinema
 {
     class Program
     {
-
-
         static void Main(string[] args)
         {
             string[] movies = new string[] { "venom", "No Time To Die", "Matrix Resurrection", "The Addams Family 2", "Dune", "Ron’s Gone Wrong" };
@@ -17,7 +15,6 @@ namespace Cinema
                 {
                     int numberOfMoviesToAdd;
                     int userChoice, userAge = 0;
-
                     do
                     {
                         Console.WriteLine(@"
@@ -27,10 +24,7 @@ Please choose one of the following options:
 3.Validate if user can watch a movie
 4.Quit Program");
                         userChoice = int.Parse(Console.ReadLine());
-
-
                     } while (!(userChoice > 0 && userChoice < 5));
-
                     if (userChoice == 1)
                     {
                         Console.WriteLine("The Current Movies are:\n" + string.Join("\n", movies));
@@ -48,11 +42,8 @@ Please choose one of the following options:
                                 Console.WriteLine("Please enter the age of the movie you would like to add (between 4-18): ");
                                 movieAge = int.Parse(Console.ReadLine());
                             } while (!(movieAge > 3 && movieAge < 19));
-
-
                             movies = movies.Append(movieName).ToArray();
                             ageRequirments = ageRequirments.Append(movieAge).ToArray();
-
                         }
                     }
                     else if (userChoice == 3)
@@ -63,16 +54,13 @@ Please choose one of the following options:
                             for (int i = 0; i < movies.Length; i++)
                             {
                                 Console.WriteLine((i + 1) + " " + movies[i] + "(" + ageRequirments[i] + ")");
-
                             }
                             userChoice = int.Parse(Console.ReadLine());
                         } while (!(userChoice > 0 && userChoice < movies.Length + 1));
-
                         do
                         {
                             Console.WriteLine("Pease enter the users Age(between 0-103): ");
                             userAge = int.Parse(Console.ReadLine());
-
                         } while (!(userChoice >= 0 && userChoice < 103));
                         Console.WriteLine(ageRequirments[userChoice - 1]);
                         if (userAge >= ageRequirments[userChoice - 1])
@@ -84,16 +72,12 @@ Please choose one of the following options:
                             Console.WriteLine("The user is NOT allowed to watch the movie");
                         }
                     }
-
-
                     else if (userChoice == 4)
                     {
                         Console.WriteLine("GoodBye!");
                         break;
                     }
-
                 }
-
             }
             catch (Exception ex)
             {

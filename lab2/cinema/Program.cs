@@ -6,7 +6,6 @@ namespace Cinema
         static void Main(string[] args)
         {
             //initializing variable that will be used
-
             int age;
             string movieName;
             int ageRequirment;
@@ -20,18 +19,11 @@ namespace Cinema
 4. The Addams Family 2 (PG) 
 5. Dune (12A) 
 6. Ron’s Gone Wrong (PG) ");
-
-
-
             //if the program is unable to convert the string(console.readline) then the try catch statment will catch the error and display
             //an error message
             try
             {
                 userChoice = int.Parse(Console.ReadLine());
-
-
-
-
 
                 if (userChoice > movies.Length || userChoice <= 0)
                 {
@@ -42,13 +34,11 @@ namespace Cinema
                 age = int.Parse(Console.ReadLine());
                 movieName = movies[userChoice - 1];
                 ageRequirment = ageRequirments[userChoice - 1];
-
                 //check if user has entered a negative number
                 if (age < 0)
                 {
                     throw new ArgumentException("Your input is invalid(less tan 0)");
                 }
-
                 //check if user is under the age you need to be to watch movie
                 else if (age < ageRequirment)
                 {
@@ -65,7 +55,6 @@ namespace Cinema
             {
                 Console.WriteLine(ex.Message);
             }
-
         }
     }
 }
